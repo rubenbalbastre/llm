@@ -1,4 +1,4 @@
-# Reinforcement Learning (RL)
+# Large Language Models (LLM)
 
 This repository contains a set of experiments to familiarise myself with LLM. I try to cover post-training and pre-training techniques.
 
