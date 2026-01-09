@@ -10,6 +10,8 @@ A set of papers and other sources I consult to develop my experiments.
 
 * [Attention is All you need](https://arxiv.org/abs/1706.03762) paper
 
+* [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) paper
+
 * ['Reinforcement Learning From Human Feedback'](https://rlhfbook.com/) Book
 
 * [HuggingFace Learn](https://huggingface.co/learn)
