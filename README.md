@@ -12,6 +12,10 @@ A set of papers and other sources I consult to develop my experiments.
 
 * [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) paper
 
+* [Scaling Laws for Neural Language Models](https://arxiv.org/pdf/2001.08361)
+
+* [Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556)
+
 * ['Reinforcement Learning From Human Feedback'](https://rlhfbook.com/) Book
 
 * [HuggingFace Learn](https://huggingface.co/learn)
