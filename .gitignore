@@ -2,3 +2,6 @@
 .venv
 *.npy
 *.txt
+
+# TensorBoard logs
+events.out.tfevents.*
