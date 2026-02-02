@@ -1,6 +1,8 @@
 # Large Language Models (LLM)
 
-This repository contains a set of experiments to familiarise myself with LLM. I try to cover post-training and pre-training techniques.
+This repository contains a set of experiments to familiarise myself with LLM. I cover the tokenization, pre-training and post-training stages.
+
+Some used references are left here. 
 
 # References
 
