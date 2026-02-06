@@ -22,6 +22,7 @@ Some used references are left here.
 
 - **Post-Training & Alignment** (`experiments/post-training/`)
   - `sft.ipynb`: runs supervised fine-tuning (SFT) on instruction-style data to align base models with prompts.
+  - `instruction-fine-tuning/instruction_fine_tuning.ipynb`: instruction-tunes a GPT-2 (124M) checkpoint on the `nvidia/Nemotron-Instruction-Following-Chat-v1` corpus, adds chat-specific tokens, and logs quick MT-Bench/HellaSwag evals.
   - `DPO.ipynb`: explores Direct Preference Optimization as an alignment method without explicit reward models.
   - `RLVR.ipynb`: experiments with reinforcement learning variants that use preference models (reward/value) on top of SFT.
 
@@ -54,4 +55,3 @@ A set of papers and other sources I consult to develop my experiments.
 * Hugging Face - TRL https://github.com/huggingface/trl/tree/main
 
 * Introduction to Reinforcement Learning. https://arxiv.org/pdf/2408.07712
-
