@@ -21,10 +21,10 @@ Some used references are left here.
   - `from_scratch_classification_fine_tuning.ipynb`: adapts a from-scratch pretrained encoder/decoder for downstream text classification.
 
 - **Post-Training & Alignment** (`experiments/post-training/`)
-  - `sft.ipynb`: runs supervised fine-tuning (SFT) on instruction-style data to align base models with prompts.
   - `instruction-fine-tuning/instruction_fine_tuning.ipynb`: instruction-tunes a GPT-2 (124M) checkpoint on the `nvidia/Nemotron-Instruction-Following-Chat-v1` corpus, adds chat-specific tokens, and logs quick MT-Bench/HellaSwag evals.
-  - `DPO.ipynb`: explores Direct Preference Optimization as an alignment method without explicit reward models.
-  - `RLVR.ipynb`: experiments with reinforcement learning variants that use preference models (reward/value) on top of SFT.
+  - `huggingface/sft.ipynb`: runs supervised fine-tuning (SFT) on instruction-style data to align base models with prompts.
+  - `huggingface/DPO.ipynb`: explores Direct Preference Optimization as an alignment method without explicit reward models.
+  - `huggingface/RLVR.ipynb`: experiments with reinforcement learning variants that use preference models (reward/value) on top of SFT.
 
 - **Shared Assets**
   - `src/`: placeholder for reusable PyTorch modules and utilities imported by notebooks as they mature into scripts.
@@ -33,6 +33,8 @@ Some used references are left here.
 # References
 
 A set of papers and other sources I consult to develop my experiments.
+
+* [Direct Preference Optimization](https://arxiv.org/abs/2305.18290)
 
 * [reasoning-from-scratch](https://github.com/rasbt/reasoning-from-scratch)
 
