@@ -5,4 +5,4 @@
 *.bin
 
 # TensorBoard logs
-events.out.tfevents.*
+# events.out.tfevents.*
