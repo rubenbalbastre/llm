@@ -26,9 +26,6 @@ Some used references are left here.
   - `huggingface/DPO.ipynb`: explores Direct Preference Optimization as an alignment method without explicit reward models.
   - `huggingface/RLVR.ipynb`: experiments with reinforcement learning variants that use preference models (reward/value) on top of SFT.
 
-- **Shared Assets**
-  - `src/`: placeholder for reusable PyTorch modules and utilities imported by notebooks as they mature into scripts.
-  - `requirements.txt`: minimal dependency list to recreate the notebook environment locally or in Colab.
 
 # References
 
