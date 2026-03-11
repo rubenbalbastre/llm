@@ -1,31 +1,29 @@
 # Large Language Models (LLM)
 
-This repository contains a set of experiments to familiarise myself with LLM. I cover the tokenization, pre-training and post-training stages, and the repo is under active development so notebooks and utilities evolve frequently.
+This repository contains a set of experiments to familiarise myself with LLM. I cover the tokenization, pre-training and post-training stages, and the repo is under active development so notebooks and utilities evolve frequently. Most experiments are expected to be executed on Google Colab.
 
 Some used references are left here. 
 
 ## Repository Structure
 
-- **Tokenization** (`experiments/tokenizer/`)
-  - `bpe.ipynb`: implements a Byte Pair Encoding tokenizer from scratch and tests it on the bundled `input.txt` corpus.
+**Tokenization** (`tokenizer/`)
+- `tokenizer/bpe.ipynb`: implements a Byte Pair Encoding tokenizer from scratch and tests it on the bundled `input.txt` corpus.
 
-- **Pre-Training** (`experiments/pre-training/`)
-  - `gpt_from_scratch/attention.ipynb`: dissects scaled dot-product attention math and code before integrating it into a full decoder block.
-  - `gpt_from_scratch/data_processing.ipynb`: prepares the Edu-FineWeb10B shards (`edu_fineweb10B/*.npy`) and the batching pipeline used across later notebooks.
-  - `gpt_from_scratch/gpt.ipynb`: assembles the base GPT architecture, optimizer, and evaluation routine.
-  - `gpt_from_scratch/gpt-2.ipynb`: scales the previous model up to a GPT-2 class configuration to study depth/width effects.
-  - `huggingface/Self_Supervised_Learning.ipynb`: reproduces Hugging Face’s self-supervised training loop using 🤗 Transformers utilities.
-  - `scaling_laws/scaling_laws.ipynb`: analyzes compute/parameter/token scaling behavior using cached `data/` binaries and the reference plots in `resources/`.
+**Pre-Training** (`pre-training/`)
+- `pre-training/gpt_from_scratch/attention.ipynb`: dissects scaled dot-product attention math and code before integrating it into a full decoder block.
+- `pre-training/gpt_from_scratch/data_processing.ipynb`: prepares the Edu-FineWeb10B shards (`edu_fineweb10B/*.npy`) and the batching pipeline used across later notebooks.
+- `pre-training/gpt_from_scratch/gpt.ipynb`: assembles the base GPT architecture, optimizer, and evaluation routine.
+- `pre-training/gpt_from_scratch/gpt-2.ipynb`: scales the previous model up to a GPT-2 class configuration to study depth/width effects.
+- `pre-training/huggingface/Self_Supervised_Learning.ipynb`: reproduces Hugging Face's self-supervised training loop using Transformers utilities.
+- `pre-training/scaling_laws/scaling_laws.ipynb`: analyzes compute/parameter/token scaling behavior using cached `data/` binaries and the reference plots in `resources/`.
 
-- **Fine-Tuning** (`experiments/fine-tuning/`)
-  - `from_scratch_classification_fine_tuning.ipynb`: adapts a from-scratch pretrained encoder/decoder for downstream text classification.
-
-- **Post-Training & Alignment** (`experiments/post-training/`)
-  - `instruction-fine-tuning/instruction_fine_tuning.ipynb`: instruction-tunes a GPT-2 (124M) checkpoint on the `nvidia/Nemotron-Instruction-Following-Chat-v1` corpus, adds chat-specific tokens, and logs quick MT-Bench/HellaSwag evals.
-  - `huggingface/sft.ipynb`: runs supervised fine-tuning (SFT) on instruction-style data to align base models with prompts.
-  - `huggingface/DPO.ipynb`: explores Direct Preference Optimization as an alignment method without explicit reward models.
-  - `huggingface/RLVR.ipynb`: experiments with reinforcement learning variants that use preference models (reward/value) on top of SFT.
-  - `reinforcement_learning_verifiable_rewards/rlvr.ipynb`: toy RLVR GRPO implementation on MATH-500 using only training data (no held-out evaluation).
+**Post-Training & Alignment** (`post-training/`)
+- `post-training/instruction-fine-tuning/instruction_fine_tuning.ipynb`: instruction-tunes a GPT-2 (124M) checkpoint on the `nvidia/Nemotron-Instruction-Following-Chat-v1` corpus, adds chat-specific tokens, and logs quick MT-Bench/HellaSwag evals.
+- `post-training/text-classification/from_scratch_classification_fine_tuning.ipynb`: adapts a from-scratch pretrained encoder/decoder for downstream text classification.
+- `post-training/huggingface/sft.ipynb`: runs supervised fine-tuning (SFT) on instruction-style data to align base models with prompts.
+- `post-training/huggingface/DPO.ipynb`: explores Direct Preference Optimization as an alignment method without explicit reward models.
+- `post-training/huggingface/RLVR.ipynb`: experiments with reinforcement learning variants that use preference models (reward/value) on top of SFT.
+- `post-training/reinforcement_learning_verifiable_rewards/rlvr.ipynb`: toy RLVR GRPO implementation on MATH-500 using only training data (no held-out evaluation).
 
 
 # References
