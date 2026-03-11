@@ -1,6 +1,6 @@
 # Large Language Models (LLM)
 
-This repository contains a set of experiments to familiarise myself with LLM. I cover the tokenization, pre-training and post-training stages, and the repo is under active development so notebooks and utilities evolve frequently.
+This repository contains a set of experiments to familiarise myself with LLM. I cover the tokenization, pre-training and post-training stages, and the repo is under active development so notebooks and utilities evolve frequently. Most experiments are expected to be executed on Google Colab.
 
 Some used references are left here. 
 
