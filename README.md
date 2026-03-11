@@ -25,6 +25,7 @@ Some used references are left here.
   - `huggingface/sft.ipynb`: runs supervised fine-tuning (SFT) on instruction-style data to align base models with prompts.
   - `huggingface/DPO.ipynb`: explores Direct Preference Optimization as an alignment method without explicit reward models.
   - `huggingface/RLVR.ipynb`: experiments with reinforcement learning variants that use preference models (reward/value) on top of SFT.
+  - `reinforcement_learning_verifiable_rewards/rlvr.ipynb`: toy RLVR GRPO implementation on MATH-500 using only training data (no held-out evaluation).
 
 
 # References
@@ -34,6 +35,7 @@ A set of papers and other sources I consult to develop my experiments.
 * [Direct Preference Optimization](https://arxiv.org/abs/2305.18290)
 
 * [reasoning-from-scratch](https://github.com/rasbt/reasoning-from-scratch)
+* [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
 
 * [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch/tree/main)
 
@@ -54,3 +56,5 @@ A set of papers and other sources I consult to develop my experiments.
 * Hugging Face - TRL https://github.com/huggingface/trl/tree/main
 
 * Introduction to Reinforcement Learning. https://arxiv.org/pdf/2408.07712
+
+* [Olmo 3](https://arxiv.org/pdf/2512.13961)
